@@ -45,7 +45,7 @@ li {
 
 .img_happy-traveller {
     width: 350px;
-    margin: 60px 0 39.5px 0;;
+    margin: 60px 0 40px 0;;
 }
 
 /* Blue line under h1*/
@@ -93,6 +93,8 @@ li {
     padding: 0;
     margin: 0;
     list-style: none;
+    display:flex;
+    flex-direction: column;
 }
 
 .offer {
@@ -110,4 +112,55 @@ li {
 }
 
 
+@media screen and (min-width: 640px) {
 
+    h2 {
+        margin: 0 0 20px 0;
+    }
+
+    .img_happy-traveller {
+        width: 400px;
+        margin: 60px 0 30px 0;;
+    }
+
+    .p-services {
+        margin-bottom: 40px;
+    }
+
+    /* Buttons */
+
+    .elipse-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .elipse-button {
+        margin-bottom: 80px;
+    }
+
+    .blue {
+        margin-right: 20px;
+    }
+
+    /* Services */
+
+    .services {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .offer {
+        flex-direction: column;
+        margin-bottom: 80px;
+        width: 227px;
+    }
+
+    .img-offer {
+        padding: 40px 95px 20px 95px;
+    }
+
+    .text-offer {
+        padding: 0 15px 20px 15px;
+        height: 70px;
+    }
+}
