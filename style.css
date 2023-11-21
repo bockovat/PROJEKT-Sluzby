@@ -11,28 +11,32 @@ body {
 
 /* Font-style, margin h1, h2, p, li */
 
-h1 {
+h1,h2 {
     font-weight: 500;
-    font-size: 28px;
     margin: 0;
     color: black;
 }
 
+h1 {
+    font-size: 28px;
+}
+
 h2 {
-    font-weight: 500;
     font-size: 16px;
-    color: black;
-    margin: 0 0 15px 0;
+    margin-bottom: 15px;
+}
+
+p, li {
+    font-weight: 300;
 }
 
 p {
-    font-weight: 300;
     font-size: 16px;
-    margin: 0 0 30px 0;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 li {
-    font-weight: 300;
     font-size: 13px;
 }
 
@@ -43,8 +47,8 @@ li {
     justify-content: center;
 }
 
-.img_happy-traveller {
-    flex: 1 1 100%;
+.happy-traveler-image {
+    flex: 1 1 auto;
     margin: 60px 75px 40px 75px;
 }
 
@@ -119,12 +123,12 @@ li {
         margin-right: 100px;
     }
 
-    h2 {
-        margin: 0 0 20px 0;
+    .happy-traveler-image {
+        margin: 60px 185px 30px 185px;
     }
 
-    .img_happy-traveller {
-        margin: 60px 185px 30px 185px;
+    h2 {
+        margin-bottom: 20px;
     }
 
     .p-services {
@@ -166,7 +170,6 @@ li {
 
     .text-offer {
         padding: 0px 15px 20px 15px;
-        /* height: 70px; */
     }
 }
 
@@ -182,11 +185,7 @@ li {
         margin-right: 0;
     }
 
-    /* First section */
-
-    .blue-border {
-        margin: 10px calc(100% - 60px) 30px 0px;
-    }
+    /* Happy travel */
 
     .happy-travels {
         display: flex;
@@ -200,9 +199,8 @@ li {
         flex: 1 1 50%;
     }
 
-    .img_happy-traveller {
+    .happy-traveler-image {
         margin: 0 auto 0 auto;
-        flex: 1 1 100%;
         max-width: 425px;
     }
 
@@ -210,6 +208,10 @@ li {
         order: 1;
         margin-top: calc(133px - 60px);
         flex: 1 1 50%;
+    }
+
+    .blue-border {
+        margin: 10px calc(100% - 60px) 30px 0px;
     }
 
     .elipse-buttons {
@@ -220,7 +222,7 @@ li {
         margin-bottom: 0px;
     }
 
-    /* other sections */
+    /* Section services */
 
     .all-services {
         display: flex;
@@ -254,6 +256,4 @@ li {
     .offer {
         margin-bottom: 0;
     }
-
-
 }
