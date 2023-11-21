@@ -38,7 +38,7 @@ li {
 
 /* Image Happy traveller */
 
-.center-image {
+.happy-travels-image {
     display: flex;
     justify-content: center;
 }
@@ -114,6 +114,11 @@ li {
 
 @media screen and (min-width: 640px) {
 
+    .happy-travels-text, .ck-text, .delegate-text {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
     h2 {
         margin: 0 0 20px 0;
     }
@@ -147,12 +152,13 @@ li {
     .services {
         flex-direction: row;
         gap: 20px;
+        justify-content: center;
     }
 
     .offer {
+        flex: 1 1 auto;
         flex-direction: column;
         margin-bottom: 80px;
-        width: 227px;
     }
 
     .img-offer {
@@ -163,4 +169,82 @@ li {
         padding: 0 15px 20px 15px;
         height: 70px;
     }
+}
+
+@media screen and (min-width: 1100px) {
+
+    body {
+        text-align: left;
+        padding: 0 80px;
+    }
+
+    .happy-travels-text, .ck-text, .delegate-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* First section */
+
+    .blue-border {
+        margin: 10px calc(100% - 60px) 30px 0px;
+    }
+
+    .happy-travels {
+        display: flex;
+        gap: 60px;
+        margin-bottom: 80px;
+    }
+
+    .happy-travels-image {
+        order: 2;
+        /* flex-grow: 1;
+        margin-top: 60px;
+        display: flex;
+        text-align: center; */
+    }
+
+    .img_happy-traveller {
+        /* max-width: 425px; */
+    }
+
+    .happy-travels-text {
+        order: 1;
+        /* flex-grow: 1; */
+    }
+
+    .h1_happy-travellers {
+        padding-top: 133px;
+    }
+
+    .elipse-buttons {
+        justify-content: left;
+    }
+
+    /* other sections */
+
+    .all-services {
+        display: flex;
+        gap: 60px;
+    }
+
+    .services {
+        flex: 1 1 auto;
+    }
+
+    .ck-text {
+        order: 1;
+    }
+
+    .ck-text, .delegate-text {
+        flex: 1 1 auto;
+    }
+
+    .text-offer {
+        text-align: center;
+    }
+
+    .delegate {
+        margin-bottom: 60px;
+    }
+
 }
